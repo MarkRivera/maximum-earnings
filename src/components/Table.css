@@ -1,0 +1,87 @@
+
+	.table {
+    margin-bottom: 1rem;
+		margin-top: 1rem;
+  }
+  
+  table, thead, tbody, th, td, tr { 
+		display: block;
+		border-collapse: collapse;
+	}
+	
+  thead {
+		text-align: left;
+		padding-bottom: 1rem;
+	}
+	
+	tbody tr { 
+		border: none;
+		padding-left: 1rem;
+	}
+
+	tbody tr:nth-child(odd) {
+  background-color: #2f2f2f;  /* set the background color of odd rows to light grey */
+	}
+
+
+	td { 
+    text-align: left;
+		border: none;
+		position: relative;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+	}
+
+/* Create a media query that makes the table look normal on screen sizes 768px and above */
+@media screen and (min-width: 768px) {
+	.table {
+    margin: 0;
+		width: 100%;
+		display: table;
+		margin-bottom: 1rem;
+  }
+  
+  table, thead, tbody, th, td, tr { 
+		display: initial;
+		border-collapse: collapse;
+	}
+	
+  thead {
+		text-align: initial;
+		padding-bottom: 0;
+		width: 100%;
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+
+	thead tr {
+		height: 4rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	th {
+		flex-basis: 33%;
+		text-align: center;
+	}
+	
+	tbody tr { 
+		border: none;
+		padding-left: 0;
+		display: flex;
+		justify-content: space-around;
+		font-size: 1.5rem;
+		height: 4rem;
+		align-items: center;
+	}
+
+	td { 
+    text-align: left;
+		border: none;
+		position: relative;
+		padding: 0;
+		flex-basis: 33%;
+		text-align: center;
+	}
+}
